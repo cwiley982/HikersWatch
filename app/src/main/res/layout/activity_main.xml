@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/outdoors"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/tealAccent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:layout_below="@id/title"
+        android:background="@android:color/white"
+        android:alpha=".6"/>
+
+    <TextView
+        android:id="@+id/longitudeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tealAccent"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/latitudeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longitudeText"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/tealAccent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/accuracyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitudeText"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/tealAccent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/altitudeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accuracyText"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/tealAccent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/altitudeText"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/tealAccent"
+        android:textStyle="bold"/>
+
+</android.widget.RelativeLayout>
